@@ -1,4 +1,8 @@
-# GBIF API Client with Shiny Frontend
+# gbif-api-client
+
+GBIF API client and SHARK4R Python port — marine biodiversity API clients, tests, CI
+
+---
 
 This project provides a Python API interface for the GBIF (Global Biodiversity Information Facility) API using the pygbif library, and a Shiny for Python frontend for interactive exploration of biodiversity data.
 
@@ -87,3 +91,4 @@ Some GBIF datasets are particularly rich in size data:
 - **Specific measurements**: Exact cell dimensions (e.g., "42 μm long")
 - **Size fractions**: Sampling ranges (e.g., ">20 μm mesh net")
 - **Size classes**: Categorical size groupings
+
