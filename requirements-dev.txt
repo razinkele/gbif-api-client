@@ -1,0 +1,7 @@
+pytest
+responses
+pytest-mock
+ruff
+black
+mypy
+types-requests
