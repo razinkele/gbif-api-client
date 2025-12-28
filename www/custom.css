@@ -1,0 +1,482 @@
+/* Marine & Biodiversity Data Explorer - Custom Styles */
+
+/* ========== Global Styles ========== */
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --accent-color: #1abc9c;
+    --warning-color: #f39c12;
+    --danger-color: #e74c3c;
+    --success-color: #27ae60;
+    --light-bg: #ecf0f1;
+    --card-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    --card-shadow-hover: 0 4px 16px rgba(0,0,0,0.15);
+    --border-radius: 8px;
+    --transition: all 0.3s ease;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background-attachment: fixed;
+}
+
+/* ========== Header ========== */
+.dashboard-header {
+    color: white;
+    text-align: center;
+    padding: 1.5rem 0;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+/* ========== Card Styles ========== */
+.sidebar-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    margin-bottom: 1.25rem;
+    box-shadow: var(--card-shadow);
+    transition: var(--transition);
+    border-left: 4px solid var(--secondary-color);
+}
+
+.sidebar-card:hover {
+    box-shadow: var(--card-shadow-hover);
+    transform: translateX(2px);
+}
+
+.dashboard-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    margin-bottom: 1.25rem;
+    box-shadow: var(--card-shadow);
+    min-height: 300px;
+    transition: var(--transition);
+}
+
+.dashboard-card:hover {
+    box-shadow: var(--card-shadow-hover);
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 1.25rem;
+    box-shadow: var(--card-shadow);
+    margin-bottom: 1rem;
+}
+
+.progress-card {
+    background: white;
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--card-shadow);
+    border-left: 4px solid var(--accent-color);
+}
+
+/* ========== Form Elements ========== */
+.form-group label {
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    display: inline-block;
+}
+
+input[type="text"],
+input[type="file"],
+select {
+    border-radius: var(--border-radius);
+    border: 2px solid #ddd;
+    padding: 0.5rem;
+    transition: var(--transition);
+}
+
+input[type="text"]:focus,
+select:focus {
+    border-color: var(--secondary-color);
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.1);
+}
+
+/* ========== Buttons ========== */
+.btn {
+    border-radius: var(--border-radius);
+    padding: 0.6rem 1.25rem;
+    font-weight: 600;
+    transition: var(--transition);
+    border: none;
+    cursor: pointer;
+    margin: 0.25rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+.btn:active {
+    transform: translateY(0);
+}
+
+.btn-primary {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: #2980b9;
+}
+
+.btn-success {
+    background: var(--success-color);
+    color: white;
+}
+
+.btn-success:hover {
+    background: #229954;
+}
+
+.btn-warning {
+    background: var(--warning-color);
+    color: white;
+}
+
+.btn-warning:hover {
+    background: #e67e22;
+}
+
+.btn-danger {
+    background: var(--danger-color);
+    color: white;
+}
+
+.btn-danger:hover {
+    background: #c0392b;
+}
+
+.btn-secondary {
+    background: #95a5a6;
+    color: white;
+}
+
+.btn-secondary:hover {
+    background: #7f8c8d;
+}
+
+/* ========== Button Groups ========== */
+.btn-group {
+    display: flex;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.btn-group .btn {
+    flex: 1;
+    width: auto;
+}
+
+/* ========== Tabs ========== */
+.nav-tabs {
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 1.5rem;
+}
+
+.nav-tabs .nav-link {
+    border-radius: var(--border-radius) var(--border-radius) 0 0;
+    padding: 0.75rem 1.25rem;
+    transition: var(--transition);
+    font-weight: 500;
+}
+
+.nav-tabs .nav-link:hover {
+    background: var(--light-bg);
+}
+
+.nav-tabs .nav-link.active {
+    background: white;
+    border-color: var(--secondary-color);
+    border-bottom-color: white;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+/* ========== Tables ========== */
+.dataframe {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.dataframe thead {
+    background: var(--primary-color);
+    color: white;
+}
+
+.dataframe thead th {
+    padding: 1rem;
+    font-weight: 600;
+}
+
+.dataframe tbody tr:nth-child(even) {
+    background: #f8f9fa;
+}
+
+.dataframe tbody tr:hover {
+    background: var(--light-bg);
+    transition: var(--transition);
+}
+
+.dataframe tbody td {
+    padding: 0.75rem;
+}
+
+/* ========== Progress Indicators ========== */
+.progress {
+    height: 1.5rem;
+    border-radius: var(--border-radius);
+    background: var(--light-bg);
+    overflow: hidden;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.progress-bar {
+    background: linear-gradient(90deg, var(--secondary-color), var(--accent-color));
+    height: 100%;
+    transition: width 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 600;
+}
+
+/* ========== Tooltips & Help ========== */
+.help-icon {
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background: var(--secondary-color);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 18px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: help;
+    margin-left: 0.5rem;
+}
+
+.help-icon:hover {
+    background: var(--accent-color);
+}
+
+.tooltip {
+    position: relative;
+}
+
+/* ========== Sidebar Enhancements ========== */
+.sidebar {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: var(--border-radius);
+    padding: 1rem;
+    box-shadow: var(--card-shadow);
+}
+
+.sidebar h4 {
+    color: var(--primary-color);
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.sidebar h5 {
+    color: var(--secondary-color);
+    margin-top: 1rem;
+    margin-bottom: 0.75rem;
+    font-weight: 600;
+}
+
+/* ========== Database Selection Grid ========== */
+.db-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    margin: 1rem 0;
+}
+
+.db-item {
+    background: #f8f9fa;
+    padding: 0.75rem;
+    border-radius: var(--border-radius);
+    border: 2px solid #dee2e6;
+    transition: var(--transition);
+}
+
+.db-item:hover {
+    border-color: var(--secondary-color);
+    background: white;
+}
+
+.db-item label {
+    font-weight: 500;
+    cursor: pointer;
+}
+
+/* ========== Responsive Design ========== */
+@media (max-width: 768px) {
+    .sidebar-card {
+        padding: 1rem;
+    }
+
+    .dashboard-card {
+        padding: 1rem;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn-group .btn {
+        width: 100%;
+    }
+}
+
+/* ========== Loading Spinner ========== */
+.spinner {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid rgba(255,255,255,.3);
+    border-radius: 50%;
+    border-top-color: white;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* ========== Section Dividers ========== */
+.section-divider {
+    border-top: 2px solid var(--light-bg);
+    margin: 1.5rem 0;
+}
+
+/* ========== Status Badges ========== */
+.badge {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 12px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    margin: 0.25rem;
+}
+
+.badge-success {
+    background: var(--success-color);
+    color: white;
+}
+
+.badge-warning {
+    background: var(--warning-color);
+    color: white;
+}
+
+.badge-info {
+    background: var(--secondary-color);
+    color: white;
+}
+
+.badge-danger {
+    background: var(--danger-color);
+    color: white;
+}
+
+/* ========== Collapsible Sections ========== */
+.collapsible {
+    cursor: pointer;
+    padding: 0.75rem;
+    background: var(--light-bg);
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+    transition: var(--transition);
+}
+
+.collapsible:hover {
+    background: #d5dbde;
+}
+
+.collapsible-content {
+    padding: 1rem;
+    background: white;
+    border-radius: var(--border-radius);
+    margin-top: 0.5rem;
+}
+
+/* ========== Improved Spacing ========== */
+.mt-1 { margin-top: 0.5rem; }
+.mt-2 { margin-top: 1rem; }
+.mt-3 { margin-top: 1.5rem; }
+.mb-1 { margin-bottom: 0.5rem; }
+.mb-2 { margin-bottom: 1rem; }
+.mb-3 { margin-bottom: 1.5rem; }
+.p-1 { padding: 0.5rem; }
+.p-2 { padding: 1rem; }
+.p-3 { padding: 1.5rem; }
+
+/* ========== Text Utilities ========== */
+.text-muted {
+    color: #6c757d;
+    font-size: 0.875rem;
+}
+
+.text-small {
+    font-size: 0.875rem;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-weight-bold {
+    font-weight: 600;
+}
+
+/* ========== Map Improvements ========== */
+.map-container {
+    border-radius: var(--border-radius);
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+    min-height: 400px;
+}
+
+/* ========== Empty State ========== */
+.empty-state {
+    text-align: center;
+    padding: 3rem 1rem;
+    color: #6c757d;
+}
+
+.empty-state-icon {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    opacity: 0.5;
+}
+
+.empty-state-text {
+    font-size: 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.empty-state-subtext {
+    font-size: 1rem;
+    color: #adb5bd;
+}

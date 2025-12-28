@@ -1,0 +1,17 @@
+@prefix dwc: <http://rs.tdwg.org/dwc/terms/> .
+@prefix envo: <http://purl.obolibrary.org/obo/ENVO_> .
+@prefix eco: <http://purl.obolibrary.org/obo/ECO_> .
+@prefix foodon: <http://purl.obolibrary.org/obo/FOODON_> .
+@prefix ro: <http://purl.obolibrary.org/obo/RO_> .
+@prefix ex: <http://example.org/> .
+
+# Example using dwc:dynamicProperties to include fuzzy score and habitat
+ex:taxon/GBIF_98765 a dwc:Taxon ;
+  dwc:scientificName "Capitella capitata" ;
+  dwc:dynamicProperties "{\"feeding_mode\": {\"score\": 3, \"term\": \"http://purl.obolibrary.org/obo/ECO_0000213\"}, \"habitat\": \"http://purl.obolibrary.org/obo/ENVO_00000000\" }" .
+
+# Another simple example (illustrative — predicates may be adapted to your ontology mapping):
+ex:taxon/GBIF_22222 a dwc:Taxon ;
+  dwc:scientificName "Corbicula fluminea" ;
+  ro:0002470 foodon:00002782 ; # ro:feeds_on foodon:phytoplankton (example)
+  eco:0000212 a eco:0000212 .

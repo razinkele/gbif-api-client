@@ -1,0 +1,25 @@
+field,label,uri,note
+feeding_mode_term_uri,Surface deposit feeder,http://purl.obolibrary.org/obo/ECO_0000271,BIOTIC category: surface deposit feeder
+feeding_mode_term_uri,Subsurface deposit feeder,http://purl.obolibrary.org/obo/ECO_0000272,BIOTIC category: subsurface deposit feeder
+feeding_mode_term_uri,Suspension feeder,http://purl.obolibrary.org/obo/ECO_0000212,Suspension/filter feeding
+feeding_mode_term_uri,Predator,http://purl.obolibrary.org/obo/ECO_0000239,Active predator
+feeding_mode_term_uri,Scavenger,http://purl.obolibrary.org/obo/ECO_0000240,Scavenger/necrophage
+feeding_mode_term_uri,Parasite,http://purl.obolibrary.org/obo/ECO_0000265,Parasitic feeding mode
+
+food_item_uri,Detritus,http://purl.obolibrary.org/obo/FOODON_00001009,Detrital organic matter
+food_item_uri,Phytoplankton,http://purl.obolibrary.org/obo/FOODON_00002782,Primary producers
+food_item_uri,Zooplankton,http://purl.obolibrary.org/obo/FOODON_00002783,Small metazoan prey
+food_item_uri,Biofilm,http://purl.obolibrary.org/obo/FOODON_00002800,Bacterial/algal biofilm
+food_item_uri,Carrion,http://purl.obolibrary.org/obo/FOODON_00002850,Dead animal matter
+
+habitat_envo_uri,Benthic zone,http://purl.obolibrary.org/obo/ENVO_00000446,Benthic environment
+substrate_envo_uri,Mud,http://purl.obolibrary.org/obo/ENVO_00002000,Soft sediment: mud
+substrate_envo_uri,Sand,http://purl.obolibrary.org/obo/ENVO_00002001,Soft sediment: sand
+substrate_envo_uri,Rock,http://purl.obolibrary.org/obo/ENVO_01000131,Hard substrate: rock
+substrate_envo_uri,Reef,http://purl.obolibrary.org/obo/ENVO_00002238,Reef structure
+
+relation_uri,feeds_on,http://purl.obolibrary.org/obo/RO_0002470,RO relation: feeds_on
+
+evidence,gut_content,,Gut content analysis
+measurementMethod,stable_isotope,,Stable isotope analysis (δ13C/δ15N)
+measurementMethod,expert_curation,,Expert assessment/compiled literature

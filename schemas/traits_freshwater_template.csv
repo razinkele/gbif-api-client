@@ -1,0 +1,7 @@
+# Template for freshwater/brachish benthic trait data
+# See `traits_freshwater_vocab.csv` for controlled vocabularies and canonical URIs
+# Columns (header) — leave values empty for a blank template row below
+# taxonID,scientificName,traitName,traitValue,traitUnit,traitURI,traitScope,feeding_mode_score,feeding_mode_term_uri,food_item_uri,relation_uri,habitat_envo_uri,substrate_envo_uri,measurementMethod,evidence,source_reference,timestamp,feeding_surface_deposit_score,feeding_subsurface_deposit_score,feeding_suspension_score,feeding_predator_score,feeding_scavenger_score,feeding_parasite_score
+
+taxonID,scientificName,traitName,traitValue,traitUnit,traitURI,traitScope,feeding_mode_score,feeding_mode_term_uri,food_item_uri,relation_uri,habitat_envo_uri,substrate_envo_uri,measurementMethod,evidence,source_reference,timestamp,feeding_surface_deposit_score,feeding_subsurface_deposit_score,feeding_suspension_score,feeding_predator_score,feeding_scavenger_score,feeding_parasite_score
+,,,,,,,,,,,,,,,,,,,,,,,

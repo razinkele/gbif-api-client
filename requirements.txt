@@ -1,0 +1,18 @@
+# Marine & Biodiversity Data Explorer - Requirements
+# Version 2.0.0
+
+# Core Dependencies
+pygbif>=0.6.3               # GBIF API client
+shiny>=0.6.0                # Web framework
+pandas>=2.0.0               # Data manipulation
+plotly>=5.17.0              # Interactive visualizations
+openpyxl>=3.1.0             # Excel file handling
+
+# Additional Dependencies
+requests>=2.31.0            # HTTP requests for API clients
+shinyswatch>=0.4.0          # Shiny themes
+python-dotenv>=1.0.0        # Environment variable management
+
+# Optional Dependencies (for specific features)
+# Install with: pip install -r requirements.txt -r requirements-optional.txt
+
